@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime</title>
+    <style>
+      h1 {
+        color: #ffffff;
+        display: block;
+        font-size: 38px;
+        text-align: center;
+        padding: 3px;
+        margin: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      h2 {
+        color: #f1f7f7;
+        display: block;
+        font-size: 25px;
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      p {
+        display: block;
+        color: #d9f2ff;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 25px;
+      }
+      li {
+        display: block;
+      }
+      .volleyball {
+        color: rgb(227, 62, 3);
+      }
+      .volleyball:hover {
+        text-decoration: none;
+      }
+      .powers {
+        color: rgb(0, 50, 0);
+      }
+      .powers:hover {
+        text-decoration: none;
+      }
+      .slayers {
+        color: rgb(0, 0, 196);
+      }
+      .slayers:hover {
+        text-decoration: none;
+      }
+      .titans {
+        color: rgb(56, 53, 53);
+      }
+      .titans:hover {
+        text-decoration: none;
+      }
+      .supernatural {
+        color: rgb(109, 0, 96);
+      }
+      .supernatural:hover {
+        text-decoration: none;
+      }
+      .author {
+        color: rgb(5, 2, 5);
+        display: block;
+        font-family: fantasy;
+        font-weight: 500px;
+        text-align: center;
+      }
+      .japan {
+        color: rgb(11, 11, 11);
+        font-weight: 900;
+        text-decoration: underline;
+      }
+      hr {
+        line-height: 5px;
+      }
+      body {
+        background: linear-gradient(
+          178.6deg,
+          rgb(20, 36, 50) 11.8%,
+          rgb(124, 143, 161) 83.8%
+        );
+
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        padding: 0%;
+        margin: 0 auto;
+      }
+      button {
+        border: 4px solid #000;
+        background: #d9f2ff;
+        border-radius: 50px;
+        color: #000;
+        cursor: pointer;
+        padding: 10px;
+        margin: 10px 5px;
+        box-shadow: 3px 3px 6px rgb(0, 0, 0.5, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #000;
+        border: 4px solid #000;
+        color: #d9f2ff;
+        padding: 10px;
+        margin: 10px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><em>ANIME</em></h1>
+    <h2><em>A stepping stone for many</em></h2>
+    <hr />
+    <p>
+      The word anime is a shortened form of the Japanese word
+      <span class="japan">animēshon</span>, which means "animation." While anime
+      has its roots in Japan, it has since spread to other countries, and today,
+      anime can be found in many different languages, including English. Besides
+      being a source of entertainment and cultural understanding, they can teach
+      you important life lessons, provide a source of encouragement, comfort,
+      inspiration, hope, an escape from reality, decision making, overcoming
+      loss and a way to understand the world better for many people, myself
+      included, amongst other themes. My personal favorites include, but are not
+      limited to:
+    </p>
+    <ul>
+      <li>
+        <a
+          href="https://www.imdb.com/title/tt3398540/"
+          target="_blank"
+          class="volleyball"
+        >
+          Haikyu!!
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.imdb.com/title/tt5626028/"
+          target="_blank"
+          class="powers"
+        >
+          My Hero Academia
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.imdb.com/title/tt9335498/"
+          target="_blank"
+          class="slayers"
+        >
+          Demon Slayer: Kimetsu no Yaiba
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.imdb.com/title/tt2560140/"
+          target="_blank"
+          class="titans"
+        >
+          Attack On Titan
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.imdb.com/title/tt12343534/"
+          target="_blank"
+          class="supernatural"
+        >
+          Jujutsu Kaisen
+        </a>
+      </li>
+    </ul>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/788/original/pFMWeX.gif?1723942050"
+      target="_blank"
+      width="500px"
+      alt="anime gif"
+    />
+    <br />
+    <button>Explore with us</button>
+    <div class="author">
+      This page was built by <strong>Snethemba Shangase</strong>🖤
+    </div>
+    <script>
+      function watchAnime() {
+        let watched = prompt("Have you watched anime?");
+        watched = watched.toLowerCase();
+        watched = watched.trim();
+        if (watched === "yes") {
+          alert("Let's be anime buddies!😎 Send me your favorite anime😁");
+        } else {
+          alert("That's okay, we can watch your first anime together😋");
+        }
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        alert("Thank you " + name + ", I'll contact you soon. Take care🫡");
+      }
+      let exploreButton = document.querySelector("button");
+      exploreButton.addEventListener("click", watchAnime);
+    </script>
+  </body>
+</html>
